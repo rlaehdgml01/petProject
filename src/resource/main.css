@@ -1,0 +1,65 @@
+
+nav{
+    grid-area:nav;
+}
+.App{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-areas: 
+    "header header header"
+    "nav main main"
+    "footer footer footer"
+    ;
+    height: 100%;
+}
+/*ul {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: bisque;
+  text-align: center;
+}*/
+nav>ul>li{
+  text-align: center;
+}
+form{
+  width: 100%;
+  padding: 1rem;
+}
+
+li:hover a{
+    font-weight: bold;
+    color:blue;
+}
+li{
+  padding:2rem;
+  font-size: large;
+  background-color: burlywood;
+}
+footer{
+  width: 100%;
+  background-color: #333333;
+  color: #ffffff;
+  padding : 1rem;
+  grid-area : footer;
+  text-align: right;
+}
+header{
+  width: 100%;
+  background-color: #aaaaaa;
+  padding: 1rem;
+  grid-area: header;
+  font-size: large;
+}
+td{
+  padding: 1rem;
+  text-align: center;
+}
+
+/*.tr-style{
+  
+}*/
+.th-style{
+  padding: 1rem;
+  
+}
