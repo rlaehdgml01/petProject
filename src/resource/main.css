@@ -4,11 +4,11 @@ nav{
 }
 .App{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0fr;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.3fr 2.7fr 0.5fr;
     grid-template-areas: 
     "header header header"
-    "nav main main"
+    "nav main sidebar"
     "footer footer footer"
     ;
     height: 100%;
@@ -62,4 +62,7 @@ td{
 .th-style{
   padding: 1rem;
   
+}
+span{
+  font-size: medium;
 }

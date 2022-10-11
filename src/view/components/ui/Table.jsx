@@ -1,6 +1,5 @@
 import React from "react";
 import Checkbox from '@mui/material/Checkbox';
-import FormControlLabel from '@mui/material/FormControlLabel';
 
 export default function Table({ data, header }) {
   return (

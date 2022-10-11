@@ -5,6 +5,7 @@ import Header from "./view/layout/Header";
 import Nav from "./view/layout/Nav";
 import Main from "./view/layout/Main";
 import Footer from "./view/layout/Footer";
+import Sidebar from "./view/layout/Sidebar";
 
 
 
@@ -14,6 +15,7 @@ function App() {
             <Header />
             <Nav />
             <Main />
+            <Sidebar />
             <Footer />
         </div>
     );

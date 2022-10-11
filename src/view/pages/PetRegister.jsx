@@ -48,7 +48,7 @@ export default function PetRegister() {
                         <MenuItem value='female'>여</MenuItem>
                     </Select>
                 </FormControl>
-                <FormControlLabel control={<Checkbox value="remember" color="primary"/>} label="중성화 유뮤" margin='normal'/>
+                <FormControlLabel control={<Checkbox value="remember" color="primary"/>} label="중성화 유무" margin='normal'/>
             </TdStyled></TrStyled>
             <TrStyled><TdStyled>
                 <FormControlLabel control={
