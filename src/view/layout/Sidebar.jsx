@@ -21,16 +21,18 @@ export default function Sidebar() {
     <Paper elevation={2} >
         <Box sx={{padding:'2rem'}}>
         <Typography component='h1' variant='h4' >
-            펫케어 서비스 구독
+            펫케어 서비스 정기 구독
         </Typography>
         <span>
             매 월 추가 비용, 조건 없이 1회 서비스 이용권과
-            장기간 케어 서비스 10%할인 혜택을 드립니다!
+            장기간 케어 서비스 10%할인 혜택을 드립니다!<br/>
         </span>
-        <Typography component='h1' variant='h4' xs>
-                49900₩ / M
+        <Typography component='h1' variant='h4' align='right'>
+                49900₩ / 월
         </Typography>
-        <Fab variant='extended'>구독</Fab>
+        <Fab sx={{
+      position: "absolute",
+      right: (theme) => theme.spacing(2)}} variant='string'>구독</Fab>
         </Box>
     </Paper>
   </Box>

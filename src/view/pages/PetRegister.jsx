@@ -27,14 +27,15 @@ export default function PetRegister() {
     };
   return (
     <Container maxWidth="sm">
+        <br />
         <Typography component="h1" variant='h4'>
             반려동물 등록
         </Typography>
-    <form>
+    <div>
         <TableStyled>
-            <TrStyled><TdStyled><TextField label="이름" required fullWidth/></TdStyled></TrStyled>
-            <TrStyled><TdStyled><TextField label="나이" required fullWidth/></TdStyled></TrStyled>
-            <TrStyled><TdStyled><TextField label="품종" required fullWidth/></TdStyled></TrStyled>
+            <TrStyled><TdStyled><TextField label="이름" fullWidth/></TdStyled></TrStyled>
+            <TrStyled><TdStyled><TextField label="나이" fullWidth/></TdStyled></TrStyled>
+            <TrStyled><TdStyled><TextField label="품종" fullWidth/></TdStyled></TrStyled>
             <TrStyled><TdStyled>
                 <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">성별</InputLabel>
@@ -57,10 +58,10 @@ export default function PetRegister() {
                 </IconButton>
             } label="사진 업로드"/>
             </TdStyled></TrStyled>
-            <TrStyled><TdStyled><TextField label="기타 참고사항" fullWidth /></TdStyled></TrStyled>
+            <TrStyled><TdStyled><TextField label="기타 참고사항" multiline rows={3} fullWidth /></TdStyled></TrStyled>
         </TableStyled>
-        <Button type='submit' size='large' variant='outlined' fullWidth/*onClick={fetchData}*/>등록</Button>
-    </form>
+        <Button type='submit' size='large' variant='outlined' fullWidth/*onClick={fetchData}*/ sx={{m:1}}>등록</Button>
+    </div>
     </Container>
   )
 }

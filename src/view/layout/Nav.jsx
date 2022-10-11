@@ -20,7 +20,7 @@ export default function Nav() {
         </li>
 
         <li>
-          <Link to="pages/service">서비스매칭</Link>
+          <Link to="pages/service">서비스</Link>
         </li>
         <li>
           <Link>이벤트</Link>
